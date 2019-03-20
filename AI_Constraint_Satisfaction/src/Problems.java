@@ -40,17 +40,21 @@ public class Problems{
 			System.out.print("\nEnter the value of n: ");
 			n_QueensProblem problem3 = new n_QueensProblem(userInput.nextInt());
 			System.out.println("Solution: ");
+			long start = System.currentTimeMillis();
 			ArrayList<Variable> results = backtrack.Backtracking_Search(problem3);
+			System.out.println("\tColumn\tRow");
 			if (results.size() != 0)
 				for(Variable v: results){
 					Value [] col = (Value[]) v.GetObject();
 					for(int i = 0; i < col.length; i++)
 						if(col[i] != null)
-//							System.out.print("\t@column "+v.Name()+"\t"+v.GetValue().Name()+"\n");
 							System.out.print("\t"+(1+Integer.parseInt(v.Name()))+"\t"+(1+(int)v.GetValue().Object()) +"\n");
 				}
 			else
 				System.out.println("Failure");
+			NumberFormat formatter = new DecimalFormat("#0.00000");
+			long end = System.currentTimeMillis();
+			System.out.println("\nTime taken: "+formatter.format((end - start) / 1000d));
 			break;
 		}	
 		userInput.close();
