@@ -42,7 +42,7 @@ public class Problems{
 			System.out.println("Solution: ");
 			long start = System.currentTimeMillis();
 			ArrayList<Variable> results = backtrack.Backtracking_Search(problem3);
-			System.out.println("\tColumn\tRow");
+			System.out.println("\tColum\tRow");
 			if (results.size() != 0)
 				for(Variable v: results){
 					Value [] col = (Value[]) v.GetObject();
