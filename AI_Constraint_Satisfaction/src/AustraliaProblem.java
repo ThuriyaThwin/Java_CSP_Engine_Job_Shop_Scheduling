@@ -3,14 +3,14 @@ import java.util.Arrays;
 public class AustraliaProblem implements CSP{	
 	private ArrayList<Variable> variables;
 	public AustraliaProblem(){
-		ArrayList<Value> varDomains = new ArrayList<>(Arrays.asList(new Value("RED","RED"),new Value("BLUE","BLUE"),new Value("GREEN","GREEN")));
-		Variable WA = new Variable("WA", null, varDomains, new Object());
-		Variable NT = new Variable("NT", null, varDomains, new Object());
-		Variable SA = new Variable("SA", null, varDomains, new Object());
-		Variable Q  = new Variable("Q", null, varDomains, new Object());
-		Variable NSW= new Variable("NSW", null, varDomains, new Object());
-		Variable V  = new Variable("V", null, varDomains, new Object());
-		Variable T  = new Variable("T", null, varDomains, new Object());
+		ArrayList<Value> rgbDomain = new ArrayList<>(Arrays.asList(new Value("RED","RED"),new Value("BLUE","BLUE"),new Value("GREEN","GREEN")));
+		Variable WA = new Variable("WA", null, rgbDomain, new Object());
+		Variable NT = new Variable("NT", null, rgbDomain, new Object());
+		Variable SA = new Variable("SA", null, rgbDomain, new Object());
+		Variable Q  = new Variable("Q", null, rgbDomain, new Object());
+		Variable NSW= new Variable("NSW", null, rgbDomain, new Object());
+		Variable V  = new Variable("V", null, rgbDomain, new Object());
+		Variable T  = new Variable("T", null, rgbDomain, new Object());
 		WA.SetObject(new Variable[]{NT,SA});
 		NT.SetObject(new Variable[]{WA,Q,SA});
 		SA.SetObject(new Variable[]{WA,NT,Q,NSW,V});
