@@ -1,4 +1,4 @@
-public interface CSP {
+public interface CSPInterface {
 	public abstract boolean isConsistent(Variable var, Value val);
 	public abstract boolean assignmentIsComplete();
 	public abstract Variable SelectUnassignedVariable();

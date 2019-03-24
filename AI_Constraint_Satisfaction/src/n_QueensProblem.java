@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 import java.util.Arrays;
-public class n_QueensProblem implements CSP{
+public class n_QueensProblem implements CSPInterface{
 	private ArrayList<Variable> variables = new ArrayList<>();
 	public n_QueensProblem(int n) {
 		ArrayList<Value> varDomains = new ArrayList<>();

@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 import java.util.Arrays;
-public class JobSchedulingProblem implements CSP{
+public class JobSchedulingProblem implements CSPInterface{
 	private ArrayList<Variable> variables;
 	public JobSchedulingProblem() {
 		ArrayList<Value> varDomains = new ArrayList<>(Arrays.asList(new Value("1", 1),new Value("2", 2),new Value("3", 3),new Value("4", 4),new Value("5", 5),new Value("6", 6),new Value("7", 7),new Value("8", 8),new Value("9", 9),new Value("10", 10),

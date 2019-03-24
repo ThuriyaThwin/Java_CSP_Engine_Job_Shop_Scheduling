@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 import java.util.Arrays;
-public class AustraliaProblem implements CSP{	
+public class AustraliaProblem implements CSPInterface{	
 	private ArrayList<Variable> variables;
 	public AustraliaProblem(){
 		ArrayList<Value> rgbDomain = new ArrayList<>(Arrays.asList(new Value("RED","RED"),new Value("BLUE","BLUE"),new Value("GREEN","GREEN")));
