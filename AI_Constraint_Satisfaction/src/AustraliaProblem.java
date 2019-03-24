@@ -3,10 +3,6 @@ import java.util.Arrays;
 public class AustraliaProblem implements CSP{	
 	private ArrayList<Variable> variables;
 	public AustraliaProblem(){
-		SetUp(0);
-	}
-	@Override
-	public void SetUp(int y){
 		ArrayList<Value> varDomains = new ArrayList<>(Arrays.asList(new Value("RED","RED"),new Value("BLUE","BLUE"),new Value("GREEN","GREEN")));
 		Variable WA = new Variable("WA", null, varDomains, new Object());
 		Variable NT = new Variable("NT", null, varDomains, new Object());

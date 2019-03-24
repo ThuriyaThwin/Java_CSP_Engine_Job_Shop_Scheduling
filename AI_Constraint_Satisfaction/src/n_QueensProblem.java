@@ -3,10 +3,6 @@ import java.util.Arrays;
 public class n_QueensProblem implements CSP{
 	private ArrayList<Variable> variables = new ArrayList<>();
 	public n_QueensProblem(int n) {
-		SetUp(n);
-	}
-	@Override
-	public void SetUp(int n) {
 		ArrayList<Value> varDomains = new ArrayList<>();
 		for(int j = 0; j < n; j++)
 			varDomains.add(new Value(("row "+(j+1)), j));

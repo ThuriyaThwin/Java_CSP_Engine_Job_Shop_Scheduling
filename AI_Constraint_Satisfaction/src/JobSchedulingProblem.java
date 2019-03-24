@@ -3,10 +3,6 @@ import java.util.Arrays;
 public class JobSchedulingProblem implements CSP{
 	private ArrayList<Variable> variables;
 	public JobSchedulingProblem() {
-		SetUp(0);
-	}
-	@Override
-	public void SetUp(int n) {
 		ArrayList<Value> varDomains = new ArrayList<>(Arrays.asList(new Value("1", 1),new Value("2", 2),new Value("3", 3),new Value("4", 4),new Value("5", 5),new Value("6", 6),new Value("7", 7),new Value("8", 8),new Value("9", 9),new Value("10", 10),
 				new Value("11", 11),new Value("12", 12),new Value("13", 13),new Value("14", 14),new Value("15", 15),new Value("16", 16),new Value("17", 17),new Value("18", 18),new Value("19", 19),new Value("20", 20),
 				new Value("21", 21),new Value("22", 22),new Value("23", 23),new Value("24", 24),new Value("25", 25),new Value("26", 26),new Value("27", 27)));
