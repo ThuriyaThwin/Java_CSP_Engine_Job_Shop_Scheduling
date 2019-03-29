@@ -1,7 +1,7 @@
 # AI_constraint_satisfaction_engine
- Backtracking Search algorithm for constraint satisfaction problems
+ Backtracking Search algorithm for any constraint satisfaction problem
 
-#Preview
+# Preview
 
 Demonstrating my CSP solver...
 
