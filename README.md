@@ -3,7 +3,7 @@
  
  Algorithms used:
 
-    1. Enumeration Inference for exact inference of probabilites.
+    1. Backtracking Search algorithm
 # Preview
 
 Demonstrating my CSP solver...
