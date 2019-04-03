@@ -14,4 +14,4 @@ Choose either of the following provided samples
 3. The n-Queens problem
 4. Create/Represent your problem as a CSP
 
-Your choice? 
+Your choice? ...
