@@ -1,6 +1,9 @@
 # AI_constraint_satisfaction_engine
- Backtracking Search algorithm for any constraint satisfaction problem
+ Backtracking Search algorithm for constraint satisfaction problems.
+ 
+ Algorithms used:
 
+    1. Enumeration Inference for exact inference of probabilites.
 # Preview
 
 Demonstrating my CSP solver...
